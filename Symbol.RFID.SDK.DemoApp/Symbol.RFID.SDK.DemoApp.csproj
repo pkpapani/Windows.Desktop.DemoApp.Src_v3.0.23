@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79E3D03C-9371-48B5-B2C9-9E91B2D29E73}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Symbol.RFID.SDK.DemoApp</RootNamespace>
+    <AssemblyName>Symbol.RFID.SDK.DemoApp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499, processorArchitecture=MSIL">
+      <HintPath>..\packages\32feet.NET.3.5.0.0\lib\net\InTheHand.Net.Personal.dll</HintPath>
+    </Reference>
+    <Reference Include="RFIDCommandLib, Version=2.1.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\RFIDCommandLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.RFID.SDK">
+      <HintPath>..\Assemblies\Symbol.RFID.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.RFID.SDK.Connectivity.Windows, Version=2.1.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Symbol.RFID.SDK.Connectivity.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.RFID.SDK.Discovery.Windows, Version=2.1.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Symbol.RFID.SDK.Discovery.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.RFID.SDK.Domain.Reader, Version=2.1.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Symbol.RFID.SDK.Domain.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.RFID.SDK.Domain.Reader.Infrastructure, Version=2.1.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Symbol.RFID.SDK.Domain.Reader.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.RFID.SDK.Domain.Reader.Infrastructure.Management, Version=2.1.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Symbol.RFID.SDK.Domain.Reader.Infrastructure.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.RFID.SDK.Logger, Version=2.1.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Symbol.RFID.SDK.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Symbol.RFID.SDK\Properties\AssemblyInfoCommon.cs">
+      <Link>Properties\AssemblyInfoCommon.cs</Link>
+    </Compile>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Antenna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Antenna.Designer.cs">
+      <DependentUpon>Antenna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capability.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capability.Designer.cs">
+      <DependentUpon>Capability.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration.Designer.cs">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataUtility.cs" />
+    <Compile Include="Entities\ActiveReaderStatus.cs" />
+    <Compile Include="Entities\RFIDReaderItem.cs" />
+    <Compile Include="Entities\RFIDReaderItemInfo.cs" />
+    <Compile Include="Entities\FilterData.cs" />
+    <Compile Include="Entities\TagData.cs" />
+    <Compile Include="Entities\TagInfo.cs" />
+    <Compile Include="ManualConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManualConnect.Designer.cs">
+      <DependentUpon>ManualConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreFilters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreFilters.Designer.cs">
+      <DependentUpon>PreFilters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regulatory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regulatory.Designer.cs">
+      <DependentUpon>Regulatory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RFIDLibraryUtility.cs" />
+    <Compile Include="Singulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Singulation.Designer.cs">
+      <DependentUpon>Singulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AppMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppMain.Designer.cs">
+      <DependentUpon>AppMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TagReporting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TagReporting.Designer.cs">
+      <DependentUpon>TagReporting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TagUtility.cs" />
+    <Compile Include="TriggersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggersForm.designer.cs">
+      <DependentUpon>TriggersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VersionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VersionInfo.Designer.cs">
+      <DependentUpon>VersionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitAnimation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitAnimation.designer.cs">
+      <DependentUpon>WaitAnimation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Antenna.resx">
+      <DependentUpon>Antenna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capability.resx">
+      <DependentUpon>Capability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration.resx">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualConnect.resx">
+      <DependentUpon>ManualConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreFilters.resx">
+      <DependentUpon>PreFilters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regulatory.resx">
+      <DependentUpon>Regulatory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Singulation.resx">
+      <DependentUpon>Singulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="AppMain.resx">
+      <DependentUpon>AppMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagReporting.resx">
+      <DependentUpon>TagReporting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggersForm.resx">
+      <DependentUpon>TriggersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VersionInfo.resx">
+      <DependentUpon>VersionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitAnimation.resx">
+      <DependentUpon>WaitAnimation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Symbol.RFID3.TagData.datasource" />
+    <None Include="Properties\DataSources\TagInfo.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon1.ico" />
+    <None Include="loadAnimation.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
