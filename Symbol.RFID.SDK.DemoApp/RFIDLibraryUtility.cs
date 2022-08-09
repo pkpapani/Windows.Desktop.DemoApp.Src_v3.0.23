@@ -271,7 +271,7 @@ namespace Symbol.RFID.SDK.DemoApp
             reader.Configurations.GetDeviceStatus(batteryStatus, powerStatus, temperatureStatus);
         }
 
-
+        /*
         /// <summary>
         /// Get RSM attribute value from the device.
         /// </summary>
@@ -282,7 +282,9 @@ namespace Symbol.RFID.SDK.DemoApp
         {
             return reader.RemoteScannerManagement.GetAttribute(attribute);
         }
+        */
 
+        /*
         /// <summary>
         /// Set RSM attribute value to the device.
         /// </summary>
@@ -295,7 +297,7 @@ namespace Symbol.RFID.SDK.DemoApp
         {
             return reader.RemoteScannerManagement.SetAttribute(attribute, type, value).ToString();
         }
-
+        */
 
         #endregion
 

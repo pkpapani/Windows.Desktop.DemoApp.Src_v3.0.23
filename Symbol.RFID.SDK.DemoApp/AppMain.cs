@@ -375,12 +375,16 @@ namespace Symbol.RFID.SDK.DemoApp
 
         private void btnGetAttribute_Click(object sender, EventArgs e)
         {
+            /*
             GetAttribute();
+            */
         }
 
         private void btnSetAttribute_Click(object sender, EventArgs e)
         {
+            /*
             SetAttribute();
+            */
         }
 
 
@@ -2135,6 +2139,7 @@ namespace Symbol.RFID.SDK.DemoApp
             }
         }
 
+        /*
         private void GetAttribute()
         {
             int attribute;
@@ -2155,7 +2160,9 @@ namespace Symbol.RFID.SDK.DemoApp
                 OutputText(ex.Message);
             }
         }
+        */
 
+        /*
         private void SetAttribute()
         {
             int attribute;
@@ -2179,6 +2186,7 @@ namespace Symbol.RFID.SDK.DemoApp
                 OutputText(ex.Message);
             }
         }
+        */
 
         #endregion
     }
