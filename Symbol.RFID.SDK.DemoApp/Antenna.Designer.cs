@@ -51,7 +51,7 @@
             this.gbAntConfiguration.Margin = new System.Windows.Forms.Padding(2);
             this.gbAntConfiguration.Name = "gbAntConfiguration";
             this.gbAntConfiguration.Padding = new System.Windows.Forms.Padding(2);
-            this.gbAntConfiguration.Size = new System.Drawing.Size(336, 121);
+            this.gbAntConfiguration.Size = new System.Drawing.Size(366, 121);
             this.gbAntConfiguration.TabIndex = 0;
             this.gbAntConfiguration.TabStop = false;
             this.gbAntConfiguration.Text = "Antenna Cofiguration";
@@ -63,7 +63,7 @@
             this.cmbLinkProfile.Location = new System.Drawing.Point(140, 82);
             this.cmbLinkProfile.Margin = new System.Windows.Forms.Padding(2);
             this.cmbLinkProfile.Name = "cmbLinkProfile";
-            this.cmbLinkProfile.Size = new System.Drawing.Size(180, 21);
+            this.cmbLinkProfile.Size = new System.Drawing.Size(210, 21);
             this.cmbLinkProfile.TabIndex = 2;
             // 
             // labelTari
@@ -91,7 +91,7 @@
             this.txtTari.Location = new System.Drawing.Point(140, 54);
             this.txtTari.Margin = new System.Windows.Forms.Padding(2);
             this.txtTari.Name = "txtTari";
-            this.txtTari.Size = new System.Drawing.Size(180, 20);
+            this.txtTari.Size = new System.Drawing.Size(210, 20);
             this.txtTari.TabIndex = 1;
             this.txtTari.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumericInput_KeyPress);
             // 
@@ -100,7 +100,7 @@
             this.txtPowerIndex.Location = new System.Drawing.Point(140, 25);
             this.txtPowerIndex.Margin = new System.Windows.Forms.Padding(2);
             this.txtPowerIndex.Name = "txtPowerIndex";
-            this.txtPowerIndex.Size = new System.Drawing.Size(180, 20);
+            this.txtPowerIndex.Size = new System.Drawing.Size(210, 20);
             this.txtPowerIndex.TabIndex = 0;
             this.txtPowerIndex.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumericInput_KeyPress);
             // 
@@ -117,7 +117,7 @@
             // btnApplyAntConfig
             // 
             this.btnApplyAntConfig.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnApplyAntConfig.Location = new System.Drawing.Point(257, 135);
+            this.btnApplyAntConfig.Location = new System.Drawing.Point(287, 135);
             this.btnApplyAntConfig.Margin = new System.Windows.Forms.Padding(2);
             this.btnApplyAntConfig.Name = "btnApplyAntConfig";
             this.btnApplyAntConfig.Size = new System.Drawing.Size(89, 28);
@@ -130,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 173);
+            this.ClientSize = new System.Drawing.Size(392, 173);
             this.Controls.Add(this.btnApplyAntConfig);
             this.Controls.Add(this.gbAntConfiguration);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

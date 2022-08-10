@@ -1,6 +1,7 @@
 ﻿using Symbol.RFID.SDK.Domain.Reader;
 using System;
 using System.Windows.Forms;
+using LinkProfile = System.Collections.Generic.KeyValuePair<ushort, string>;
 
 namespace Symbol.RFID.SDK.DemoApp
 {
@@ -63,8 +64,9 @@ namespace Symbol.RFID.SDK.DemoApp
                 var linkProfiles = this.Reader.Configurations.Antennas[0].SupportedLinkProfiles;
                 foreach (var item in linkProfiles)
                 {
-                    cmbLinkProfile.Items.Insert(item.Key, item.Value);
+                    cmbLinkProfile.Items.Add(new LinkProfile(item.Key, item.Value));
                 }
+                cmbLinkProfile.DisplayMember = nameof(LinkProfile.Value);
 
             }
             catch (Exception ex)
@@ -106,7 +108,7 @@ namespace Symbol.RFID.SDK.DemoApp
                 if (Reader != null)
                 {
                     var antennaConfig = new AntennaConfiguration();
-                    antennaConfig.LinkProfile = (ushort)cmbLinkProfile.SelectedIndex;
+                    antennaConfig.LinkProfile = ((LinkProfile)cmbLinkProfile.SelectedItem).Key;
                     antennaConfig.Tari = Convert.ToUInt32(txtTari.Text);
                     antennaConfig.TransmitPowerIndex = ushort.Parse(txtPowerIndex.Text);
 
