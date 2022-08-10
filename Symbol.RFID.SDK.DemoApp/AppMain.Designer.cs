@@ -918,6 +918,7 @@ namespace Symbol.RFID.SDK.DemoApp
             this.btnWrite.TabIndex = 29;
             this.btnWrite.Text = "WRITE";
             this.btnWrite.UseVisualStyleBackColor = false;
+            this.btnWrite.Click += new System.EventHandler(this.btnWrite_Click);
             // 
             // btnRead
             // 
@@ -937,6 +938,7 @@ namespace Symbol.RFID.SDK.DemoApp
             this.btnRead.TabIndex = 28;
             this.btnRead.Text = "READ";
             this.btnRead.UseVisualStyleBackColor = false;
+            this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 
             // txtData
             // 
